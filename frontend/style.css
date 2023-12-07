@@ -1,0 +1,260 @@
+/* Reset some default styles */
+body, h1, h2, p, img {
+  margin: 0;
+  padding: 0;
+}
+
+/* Apply a background image or color to the body */
+body {
+  background: #EFFFF0; /* Add your background image or color */
+  font-family: Arial, sans-serif;
+}
+
+/* Style the navigation bar */
+.nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: transparent; /* Make the background transparent */
+  color: #000; /* Change text color to black */
+  padding: 10px 20px;
+}
+
+.nav img {
+  height: 40px; /* Adjust the height as needed */
+  padding: 15px; /* Adjust padding */
+}
+
+.nav-middle {
+  display: flex;
+}
+
+.nav-middle h2 {
+  margin-right: 20px;
+  cursor: pointer;
+  color: black;
+}
+
+.nav-middle h2.underline {
+  text-decoration: underline; /* Add underline only to the "Home" link */
+}
+
+/* Style the bell icon */
+.bell-button {
+  background-color: #93d895;
+  color: white;
+  border: none;
+  padding: 15px; /* Adjust padding */
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 12px;
+  cursor: pointer;
+  border-radius: 50%; /* Make the button perfectly circular */
+}
+
+/* Style the SignUp button */
+.signup-button {
+  background-color: #93d895;
+  color: white;
+  border: none;
+  padding: 15px; /* Adjust padding */
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  cursor: pointer;
+  border-radius: 30px; /* Add a bit of curve to the edges */
+}
+
+/* Responsive design - adjust as needed */
+@media screen and (max-width: 600px) {
+  .nav {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .nav-middle {
+    margin-top: 10px;
+  }
+
+  .nav-middle h2 {
+    margin-bottom: 10px;
+    margin-right: 0;
+  }
+}
+
+.box {
+  background-color: #93d895;
+  color: #ffffff; 
+  padding: 20px; 
+  text-align: center;
+  font-size: 24px;
+  border-radius: 30px;
+  height: 420px;
+  overflow: hidden;
+  margin-top: 60px;
+  margin-left: 40px;
+  margin-right: 40px;
+}
+
+
+.box-left {
+  float: left;
+  text-align: left;
+  max-width: 40%;
+}
+
+.box-right {
+  float: right;
+}
+
+.box-right img {
+  height: 440px;
+  width: 700px;
+}
+
+.box-left h1,
+.box-left h2,
+.box-left h3 {
+  color: #000;
+  margin: 0;
+}
+.box-left h1{
+  margin-top: 50px;
+  padding-left: 40px;
+  font-size: 3.6rem;
+  font-weight: 1200;
+}
+
+.box-left h3{
+  margin-top: 20px;
+  padding-left: 40px;
+  font-size: 1.3rem;
+  font-weight: 300;
+}
+
+.box-left h2{
+  margin-top: 24px;
+  padding-left: 40px;
+  font-size: 1.4rem;
+  font-weight: 800;
+}
+
+.container {
+  margin-top: 120px;
+  display: flex;
+}
+
+.left {
+  width: 30%;
+  padding: 0 10px;
+  box-sizing: border-box;
+}
+
+.right {
+  width: 65%;
+  box-sizing: border-box;
+  margin-left: 20px;
+}
+
+.category-box {
+  border: 1px solid #93d895;
+  border-radius: 28px;
+  background-color: #93d895;
+  padding: 20px;
+  margin-left: 30px;
+  position: relative;
+  width: 20vw;
+  height: 80vh;
+}
+
+.category-box select {
+  background-color: #FFC3A0;
+  margin-top: 10px;
+  width: 100%;
+  padding: 8px;
+  border: 2px solid #000;
+  border-radius: 50px;
+  box-sizing: border-box;
+}
+
+.category-box h1 {
+  margin-top: 5;
+  margin-bottom: 5;
+}
+
+.category-box select::after {
+  content: '\25BC';
+  position: absolute;
+  top: 50%;
+  right: 10px;
+  transform: translateY(-50%);
+  pointer-events: none;
+}
+
+.right-top {
+  display: flex;
+  justify-content: space-between;
+}
+
+.searchbar {
+  width: 70%;
+}
+
+.searchbar input {
+  width: 100%; /* Adjusted the width of the input */
+  padding: 8px;
+  box-sizing: border-box;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  margin-bottom: 10px;
+}
+
+.sortfunc {
+  width: 25%;
+  margin-left: 5%;
+}
+
+.sortfunc select{
+  background-color: black;
+  color: #EFFFF0;
+  width: 70%;
+  padding: 8px;
+  box-sizing: border-box;
+  border: 1px solid #ccc;
+  border-radius: 15px;
+}
+
+.cards {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  margin-top: 20px;
+}
+
+.card {
+  width: 46%; /* Adjust the width as needed to leave some space between cards */
+  border: 1px solid #ccc;
+  border-radius: 10px;
+  margin-bottom: 20px;
+  padding: 10px;
+  box-sizing: border-box;
+  background-color:#93d895 ;
+}
+
+.card img {
+  width: 100%;
+  border-radius: 8px;
+  height: 40vh;
+
+}
+
+.card h2 {
+  margin-top: 10px;
+  margin-bottom: 5px;
+}
+
+.card p {
+  color: #555;
+}
